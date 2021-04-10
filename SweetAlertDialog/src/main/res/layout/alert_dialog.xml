@@ -147,6 +147,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
         <TextView
             android:id="@+id/content_text"
             android:layout_width="wrap_content"
@@ -162,8 +169,6 @@
             android:visibility="gone"
             tools:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry"
             tools:visibility="visible" />
-
-        </ScrollView>
 
         <FrameLayout
             android:id="@+id/custom_view_container"
@@ -218,6 +223,10 @@
                 android:text="Ok"
                 android:visibility="gone" />
         </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
 
 
     </LinearLayout>
