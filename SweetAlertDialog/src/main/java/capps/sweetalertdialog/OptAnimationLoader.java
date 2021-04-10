@@ -19,7 +19,9 @@ public class OptAnimationLoader {
         XmlResourceParser parser = null;
         try {
             parser = context.getResources().getAnimation(id);
+
             return createAnimationFromXml(context, parser);
+
         } catch (XmlPullParserException ex) {
             Resources.NotFoundException rnf = new Resources.NotFoundException("Can't load animation resource ID #0x" +
                     Integer.toHexString(id));
@@ -80,7 +82,7 @@ public class OptAnimationLoader {
                     try {
                         anim = (Animation) Class.forName(name).getConstructor(Context.class, AttributeSet.class).newInstance(c, attrs);
                     } catch (Exception te) {
-                        throw new RuntimeException("Unknown animation name: " + parser.getName() + " error:" + te.getMessage());
+                        System.out.println(new RuntimeException("Unknown animation name: " + parser.getName() + " error:" + te.getMessage()));
                     }
                     break;
             }
