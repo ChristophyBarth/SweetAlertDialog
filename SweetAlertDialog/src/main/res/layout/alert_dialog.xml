@@ -20,10 +20,6 @@
         android:paddingRight="30dp"
         android:paddingTop="10dp">
 
-        <ScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
         <ImageView
             android:id="@+id/custom_image"
             android:layout_width="@dimen/custom_image_size"
@@ -147,6 +143,10 @@
             tools:text="Title"
             tools:visibility="visible" />
 
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/content_text"
             android:layout_width="wrap_content"
@@ -162,6 +162,8 @@
             android:visibility="gone"
             tools:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry"
             tools:visibility="visible" />
+
+        </ScrollView>
 
         <FrameLayout
             android:id="@+id/custom_view_container"
@@ -218,7 +220,6 @@
         </LinearLayout>
 
 
-        </ScrollView>
     </LinearLayout>
 
 </FrameLayout>
