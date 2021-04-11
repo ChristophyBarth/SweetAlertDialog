@@ -194,6 +194,7 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/cancel_button"
                 style="@style/dialog_blue_button"
+                android:textSize="20sp"
                 android:layout_marginRight="25dp"
                 android:background="@drawable/red_button_background"
                 android:visibility="gone"
