@@ -504,11 +504,10 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
         return this;
     }
 
-    public SweetAlertDialog setConfirmButtonTextSize(Float size) {
+    public void setConfirmButtonTextSize(Float size) {
         if (mConfirmButton != null && size != null) {
             mConfirmButton.setTextSize(TypedValue.COMPLEX_UNIT_SP, size);
         }
-        return this;
     }
 
     public Integer getConfirmButtonTextColor() {
@@ -523,11 +522,10 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
         return this;
     }
 
-    public SweetAlertDialog setNeutralButtonTextSize(Float size) {
+    public void setNeutralButtonTextSize(Float size) {
         if (mNeutralButton != null && size != null) {
             mNeutralButton.setTextSize(TypedValue.COMPLEX_UNIT_SP, size);
         }
-        return this;
     }
 
     public Integer getNeutralButtonTextColor() {
@@ -542,11 +540,10 @@ public class SweetAlertDialog extends Dialog implements View.OnClickListener {
         return this;
     }
 
-    public SweetAlertDialog setCancelButtonTextSize(Float size) {
+    public void setCancelButtonTextSize(Float size) {
         if (mCancelButton != null && size != null) {
             mCancelButton.setTextSize(TypedValue.COMPLEX_UNIT_SP, size);
         }
-        return this;
     }
 
     public Integer getCancelButtonTextColor() {
