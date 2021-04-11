@@ -191,10 +191,8 @@
             android:paddingTop="10dp"
             android:visibility="visible">
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/cancel_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 style="@style/dialog_blue_button"
                 android:layout_marginRight="25dp"
                 android:background="@drawable/red_button_background"
@@ -202,10 +200,8 @@
                 tools:text="cancel"
                 tools:visibility="visible" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/neutral_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 style="@style/dialog_blue_button"
                 android:layout_marginLeft="-10dp"
                 android:layout_marginRight="10dp"
@@ -214,10 +210,8 @@
                 tools:text="neutral"
                 tools:visibility="gone" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/confirm_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 style="@style/dialog_blue_button"
                 android:text="Ok"
                 android:visibility="gone" />
